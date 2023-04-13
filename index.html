@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Temporizador para pc o celular" />
-    <meta name="keywords" content="temporizador, tiempo, inicio, detener, pausar, reset" />
+    <meta
+      name="keywords"
+      content="temporizador, tiempo, inicio, detener, pausar, reset"
+    />
     <meta name="author" content="Laura Rota" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -18,22 +21,62 @@
   </head>
   <body>
     <main class="container text-center my-5">
-        <section class="textoVioleta">
-            <article class="bg-dark text-bg-dark ">
-                <br>
-                <h2>Cronometro <hr></h2>
-                <br>
-            </article>
-            <article class="bg-dark text-bg-dark mt-5" id="articulo2">
-                <h1 id="cronometro">00:00:00</h1>
-                <br>
-                <button class="btn btnVioleta"id="btnIniciar">Iniciar</button>
-                <button class="btn btnVioleta"id="btnDetener">Detener</button>
-                <button class="btn btnVioleta"id="btnReset">Reset</button>
-                <br>
-            </article>
-        </section>
+      <section class="textoVioleta">
+        <article class="bg-dark text-bg-dark">
+          <br />
+          <h2>
+            Temporizador
+            <hr />
+          </h2>
+          <br />
+        </article>
+        <article class="bg-dark text-bg-dark mt-5" id="articulo2">
+          <form>
+            <h1 id="temporizador">00:00:00</h1>
+            <div class="form-group">
+              <label for="horas">Horas:</label>
+              <input
+                type="number"
+                id="horas"
+                class="form-control"
+                min="0"
+                max="23"
+                step="1"
+                value="0"
+              />
+            </div>
+            <div class="form-group">
+              <label for="minutos">Minutos:</label>
+              <input
+                type="number"
+                id="minutos"
+                class="form-control"
+                min="0"
+                max="59"
+                step="1"
+                value="0"
+              />
+            </div>
+            <div class="form-group">
+              <label for="segundos">Segundos:</label>
+              <input
+                type="number"
+                id="segundos"
+                class="form-control"
+                min="0"
+                max="59"
+                step="1"
+                value="0"
+              />
+            </div>
+            <button class="btn btnVioleta" id="btnIniciar">Iniciar</button>
+            <button class="btn btnVioleta" id="btnDetener">Detener</button>
+            <button class="btn btnVioleta" id="btnReset">Reset</button>
+          </form>
+        </article>
+      </section>
     </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
